@@ -36,16 +36,15 @@ apt-get install fio -y
 apt-get install sysbench -y
 
 # Configurando node_exporter
-cd Avaliaacao-de-desempenho-AWS-AZURE/aplicacao
+cd /Avaliacao-de-desempenho-AWS-AZURE/aplicacao
 wget https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz
 tar -xvf node_exporter-1.3.1.linux-amd64.tar.gz
-cd node_exporter-1.3.1.linux-amd64
-cp node_exporter /usr/local/bin
+cp /Avaliacao-de-desempenho-AWS-AZURE/aplicacao/node_exporter-1.3.1.linux-amd64/node_exporter /usr/local/bin
 useradd --no-create-home --shell /bin/false node_exporter
 chown node_exporter:node_exporter /usr/local/bin/node_exporter
-/bin/cp -f /Avaliacao-de-desempenho-AWS-AZURE/aplicacao/etc/systemd/system/node_exporter.service /etc/systemd/system/
-rm -f /node_exporter-1.3.1.linux-amd64.tar.gz
-rm -rf /node_exporter-1.3.1.linux-amd64
+/bin/cp /Avaliacao-de-desempenho-AWS-AZURE/aplicacao/node-exporter/etc/systemd/system/node_exporter.service /etc/systemd/system/
+rm -f /Avaliacao-de-desempenho-AWS-AZURE/aplicacao/node_exporter-1.3.1.linux-amd64.tar.gz
+rm -rf /Avaliacao-de-desempenho-AWS-AZURE/aplicacao/node_exporter-1.3.1.linux-amd64
 
 # Subindo node_exporter
 systemctl daemon-reload 

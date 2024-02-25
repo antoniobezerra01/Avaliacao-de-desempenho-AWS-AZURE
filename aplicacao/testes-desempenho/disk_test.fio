@@ -1,0 +1,14 @@
+[global]
+ioengine=posixaio
+runtime=30s
+time_based
+
+[write_test]
+bs=4k
+size=1G
+rw=randwrite
+
+[read_test]
+bs=4k
+size=1G
+rw=randread

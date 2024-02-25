@@ -43,7 +43,9 @@ cd node_exporter-1.3.1.linux-amd64
 cp node_exporter /usr/local/bin
 useradd --no-create-home --shell /bin/false node_exporter
 chown node_exporter:node_exporter /usr/local/bin/node_exporter
-cp -f /Avaliacao-de-desempenho-AWS-AZURE/aplicacao/etc/systemd/system/node_exporter.service /etc/systemd/system/
+/bin/cp -f /Avaliacao-de-desempenho-AWS-AZURE/aplicacao/etc/systemd/system/node_exporter.service /etc/systemd/system/
+rm -f /node_exporter-1.3.1.linux-amd64.tar.gz
+rm -rf /node_exporter-1.3.1.linux-amd64
 
 # Subindo node_exporter
 systemctl daemon-reload 

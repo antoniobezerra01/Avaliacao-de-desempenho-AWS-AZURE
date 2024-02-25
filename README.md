@@ -1,2 +1,4 @@
 # Avaliacao-de-desempenho-AWS-AZURE
-Avaliacao de desempenho AWS AZURE
+Avaliação de desempenho de máquinas virtuais AWS-AZURE
+
+LEMBRAR DE SUBSTITUIR NOS ARQUIVOS *monitoria/script/ping.sh* E *monitoria/docker/prometheus.yaml* QUANDO TIVER COM A INFORMAÇÃO DO IP DA INSTÂNCIA DE APLICAÇÃO, PREFERENCIALMENTE UTILIZAR IP INTERNO DAS INSTÂNCIAS PARA COMUNICAÇÃO ENTRE ELAS PARA QUE HAJA UMA MAIOR SEGURANÇA E VELOCIDADE NO TRÁFEGO DE DADOS.
